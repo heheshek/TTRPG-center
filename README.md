@@ -1,2 +1,2 @@
 # TTRPG-center
-Simple app repo. Nothing remarkable move on please
+This app serves as a data center for adventurers suffering dementia
