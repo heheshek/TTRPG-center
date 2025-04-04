@@ -1,14 +1,10 @@
-<!-- MANPAGE: BEGIN EXCLUDED SECTION -->
-
 <div align="center">
     <h1>TTRPG-center</h1>
 </div>
-* [OVERVIEW](#overview)
-* [FEATURES](#features)
-* [USAGE](#usage)
-* [INSTALLATION](#installation)
-
-<!-- MANPAGE: END EXCLUDED SECTION -->
+- [OVERVIEW](#overview)
+- [FEATURES](#features)
+- [USAGE](#usage)
+- [INSTALLATION](#installation)
 
 ## OVERVIEW 
 TTRPG center is a scaleable, open-source, mobile and desktop app aimed at managing campaigns for players, unifying data to help with the flow of the gameplay.
