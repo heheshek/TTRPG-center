@@ -10,7 +10,7 @@
 - [INSTALLATION](#installation)
 
 ## OVERVIEW 
-TTRPG center is a scaleable, open-source, mobile and desktop app aimed at managing campaigns for players, unifying data to help with the flow of the gameplay.
+TTRPG center is a scaleable, open-source, mobile and desktop app aimed at managing campaigns for players, unifying data to help with the flow of gameplay.
 
 ## IMPLEMENTATION
 language: Kotlin
