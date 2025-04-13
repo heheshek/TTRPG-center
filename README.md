@@ -13,9 +13,9 @@
 TTRPG center is a scaleable, open-source, mobile and desktop app aimed at managing campaigns for players, unifying data to help with the flow of gameplay.
 
 ## IMPLEMENTATION
-language: Kotlin
-build framework: Gradle
-testing framework: Jupiter JUnit 5 
+* language: Kotlin
+* build framework: Gradle
+* testing framework: Jupiter JUnit 5 
 
 ## FEATURES
 * Campaign repository avalabile to its players
