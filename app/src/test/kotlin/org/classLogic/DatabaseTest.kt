@@ -1,6 +1,6 @@
-package org.classLogic.classes.database
+package org.classLogic.database
 
-import org.classLogic.classes.datacell.DataCell
+import org.classLogic.datacell.DataCell
 
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.BeforeEach
@@ -12,7 +12,7 @@ class DatabaseTest {
 
     @BeforeEach
     fun setUp() {
-        database = Database()
+        database = Database("")
     }
 
     @Test

@@ -1,7 +1,7 @@
-package org.classLogic.classes.player
+package org.classLogic.player
 
-import org.classLogic.classes.playercharacter.PC
-import org.classLogic.classes.playercharacter.FiveEPC
+import org.classLogic.playercharacter.PC
+import org.classLogic.playercharacter.FiveEPC
 
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.BeforeEach

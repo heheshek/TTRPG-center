@@ -1,6 +1,6 @@
-package org.classLogic.classes.playermanager
+package org.classLogic.playermanager
 
-import org.classLogic.classes.player.Player
+import org.classLogic.player.Player
 
 class PlayerManager {
     private val players: MutableList<Player> = mutableListOf()

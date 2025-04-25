@@ -1,9 +1,18 @@
-package org.classLogic.classes.database
+package org.classLogic.database
 
-import org.classLogic.classes.datacell.DataCell
+import org.classLogic.datacell.DataCell
+import java.io.File
 
 class Database {
     private val dataCells: MutableList<DataCell> = mutableListOf()
+    val basePath: String
+
+    constructor(folderPath: String) {
+        basePath = "${folderPath}data"
+        if (!File(basePath).exists()) {
+            File(basePath).mkdirs()
+        }
+    }
 
     fun addDataCell(cellName: DataCell) {
 

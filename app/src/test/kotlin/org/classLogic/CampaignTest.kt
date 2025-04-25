@@ -1,7 +1,7 @@
-package org.classLogic.classes.campaign
+package org.classLogic.campaign
 
-import org.classLogic.classes.database.Database
-import org.classLogic.classes.playermanager.PlayerManager
+import org.classLogic.database.Database
+import org.classLogic.playermanager.PlayerManager
 
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.BeforeEach
@@ -10,11 +10,14 @@ import org.junit.jupiter.api.Test
 class CampaignTest {
 
     private lateinit var campaign: Campaign
+    private lateinit var emptyCampaign: Campaign
     private val gameMasterId = "12345"
+    private val campaignId = "67890"
 
     @BeforeEach
     fun setUp() {
-        campaign = Campaign("testCampaign", gameMasterId)
+        emptyCampaign = Campaign("testCampaign", campaignId)
+        campaign = Campaign("testCampaign", campaignId, gameMasterId)
     }
 
     @Test

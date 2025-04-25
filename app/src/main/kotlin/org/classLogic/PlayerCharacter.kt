@@ -1,4 +1,4 @@
-package org.classLogic.classes.playercharacter
+package org.classLogic.playercharacter
 
 enum class PCType {
     NONE, DND5E
@@ -49,7 +49,7 @@ class FiveEPC(setName: String) : PC() {
         this.playerGame = PCType.DND5E
     }
 
-    fun statCheck(stat: String): Int {
+    fun statBonus(stat: String): Int {
         return 0
     }
 }

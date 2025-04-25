@@ -1,6 +1,6 @@
-package org.classLogic.classes.playermanager
+package org.classLogic.playermanager
 
-import org.classLogic.classes.player.Player
+import org.classLogic.player.Player
 
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.BeforeEach
@@ -23,7 +23,7 @@ class PlayerManagerTest {
     fun addPlayerTest() {
         playerManager.addPlayer(player1)
         assertEquals(1, playerManager.getSize())
-        assertTrue(playerManager.getPlayers().contains(player1))
+        assertTrue(playerManager.getPlayers().contains(player1), "Failed to add player")
     }
 
     @Test
@@ -32,15 +32,15 @@ class PlayerManagerTest {
         playerManager.addPlayer(player2)
         playerManager.removePlayer(player1)
         assertEquals(1, playerManager.getSize())
-        assertFalse(playerManager.getPlayers().contains(player1))
-        assertTrue(playerManager.getPlayers().contains(player2))
+        assertFalse(playerManager.getPlayers().contains(player1), "Failed to remove player")
+        assertTrue(playerManager.getPlayers().contains(player2), "Another player not found")
     }
 
     @Test
     fun preventDuplicatesTest() {
         playerManager.addPlayer(player1)
         playerManager.addPlayer(player1)
-        assertEquals(1, playerManager.getSize())
+        assertEquals(1, playerManager.getSize(), "Duplicate player added")
     }
 
     @Test
@@ -48,6 +48,6 @@ class PlayerManagerTest {
         playerManager.addPlayer(player1)
         playerManager.removePlayer(player2)
         assertEquals(1, playerManager.getSize())
-        assertTrue(playerManager.getPlayers().contains(player1))
+        assertTrue(playerManager.getPlayers().contains(player1), "Player should still be present")
     }
 }
