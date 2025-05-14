@@ -44,9 +44,20 @@ class Player {
         if (!characters.contains(character))
             characters.add(character)
     }
-    fun removeCharacter(character: String): Int {
-        // return 0 on success, 1 if found duplicates
-        return 0
+    fun removeCharacter(character: String): List<PC>? {
+        var matchingCharacters: MutableList<PC> = mutableListOf()
+        for (c in getCharacters()) {
+            if (c.mgetName() == character) {
+                matchingCharacters.add(c)
+            }
+        }
+
+        if (matchingCharacters.size > 1) return matchingCharacters
+        if (matchingCharacters.size == 1) {
+            removeCharacterSpecific(matchingCharacters[0])
+            return matchingCharacters
+        }
+        return null
     }
     fun removeCharacterSpecific(character: PC) {
         if (characters.contains(character))
@@ -54,7 +65,6 @@ class Player {
     }
 
     fun isGameMaster(): Boolean {
-        //return status == PType.GM
-        return false
+        return status == PType.GM
     }
 }

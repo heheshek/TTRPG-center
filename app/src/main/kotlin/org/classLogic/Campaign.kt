@@ -56,7 +56,7 @@ class Campaign {
     }
 
     fun changeStatus(newStatus: Status) {
-        //status = newStatus
+        this.status = newStatus
     }
     fun findStatus(): Status {
         return status
